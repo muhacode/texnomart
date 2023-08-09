@@ -1,0 +1,26 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Daily preconditions" verbose="1">
+    <parameter name="env" value="anor"/>
+    <parameter name="testname" value="Main Elements"/>
+    <parameter name="description" value="Test Main Elements"/>
+    <listeners>
+        <listener class-name="framework.listeners.TestNGListener"/>
+    </listeners>
+
+<!--    <suite-files>-->
+<!--        <suite-file path="anor/main.xml"></suite-file>-->
+<!--    </suite-files>-->
+<!--    <test name="MainTest">-->
+<!--        <classes>-->
+<!--            <class name="project.tests.MainP2PTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="PaymentInvoicesTest">
+        <classes>
+            <class name="project.texnomart.tests.InstallmentRepaymentTest"></class>
+            <class name="project.tests.ProductTest"></class>
+        </classes>
+    </test>
+</suite>

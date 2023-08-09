@@ -1,0 +1,19 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Daily preconditions" verbose="1">
+    <parameter name="env" value="texnomart"/>
+    <parameter name="testname" value="Main Elements"/>
+    <parameter name="description" value="Test Main Elements"/>
+    <listeners>
+        <listener class-name="framework.listeners.TestNGListener"/>
+    </listeners>
+
+    <test name="MainHome">
+        <parameter name="testname" value="MainHome"/>
+        <parameter name="testdata" value="main"/>
+        <classes>
+            <class name="project.tests.ProductTest"/>
+        </classes>
+    </test>
+</suite>
